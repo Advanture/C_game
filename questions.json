@@ -1,0 +1,21 @@
+[
+  {
+    "question": "This is the Question 1",
+    "answers": [
+      "\\xD0\\x9F\\xD1\\x80\\xD0\\xB8\\xD0\\xB2\\xD0\\xB5\\xD1\\x82",
+      "\\u0418\\u0421\\u0422-933",
+      "Кодировка",
+      "Fourth"
+    ],
+    "correct": "1"
+  },{
+    "question": "This is the Question 2",
+    "answers": [
+      "First",
+      "Second",
+      "Third",
+      "Fourth"
+    ],
+    "correct": "1"
+  }
+]
