@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <windows.h>
 #include "json.hpp"
+#include <ctime>
 
 using namespace std;
 using json = nlohmann::json;
@@ -15,6 +16,7 @@ void leaderboard();
 
 int main() {
     setlocale(LC_ALL, "Russian");
+    srand(time(NULL));
     menu();
     return 0;
 }
@@ -56,18 +58,26 @@ void game()
         }
     }
 
-    while (progress != questions.size())
+    vector <int> unused_questions(questions.size());
+
+    for(int i = 0; i < questions.size(); i++){
+        unused_questions[i] = i;
+    }
+
+    while (!unused_questions.empty())
     {
-        string question = questions[progress]["question"];
+        int curr_question = rand() % unused_questions.size();
+
+        string question = questions[unused_questions[curr_question]]["question"];
         cout << question << endl;
         for (size_t i = 0; i < 4; ++i)
         {
-            string answers = questions[progress]["answers"][i];
+            string answers = questions[unused_questions[curr_question]]["answers"][i];
             cout << "\t" << i + 1 << ". " << answers << endl;
         }
         cout << "Введите номер ответа:";
         cin >> answer;
-        if (answer == questions[progress]["correct"])
+        if (answer == questions[unused_questions[curr_question]]["correct"])
         {
             cout << "Правильно!" << endl;
             scores++;
@@ -76,7 +86,7 @@ void game()
         {
             cout << "Не правильно!" << endl;
         }
-        progress++;
+        unused_questions.erase(unused_questions.begin() + curr_question);
     }
     cout << "Отлично! Вы заработали " << scores << " очков!" << endl;
 
