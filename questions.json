@@ -1,21 +1,66 @@
 [
   {
-    "question": "This is the Question 1",
+    "question": "The symbol of Rome is a sculptural image of a she-wolf, Berlin is an image of a bear. And what is the symbol of Copenhagen?",
     "answers": [
-      "\\xD0\\x9F\\xD1\\x80\\xD0\\xB8\\xD0\\xB2\\xD0\\xB5\\xD1\\x82",
-      "\\u0418\\u0421\\u0422-933",
-      "Кодировка",
-      "Fourth"
+      "Lion",
+      "Mermaid",
+      "Swan",
+      "Cat in a bag"
+    ],
+    "correct": "2"
+  },{
+    "question": "Why are sharks always on the move?",
+    "answers": [
+      "No brakes",
+      "Heterocercal fin",
+      "No swim bladder",
+      "Torpedo-shaped body"
     ],
     "correct": "1"
   },{
-    "question": "This is the Question 2",
+    "question": "This sport is the most dangerous for teeth. What kind of sport are you talking about?",
     "answers": [
-      "First",
-      "Second",
-      "Third",
-      "Fourth"
+      "Hockey",
+      "Football",
+      "Rugby",
+      "Boxing"
     ],
     "correct": "1"
+  },{
+    "question": "What metal in its purest form can be crushed by hand?",
+    "answers": [
+      "Platinum",
+      "Gold",
+      "Silver",
+      "Bronze"
+    ],
+    "correct": "2"
+  },{
+    "question": "Which country has more lakes than all the rest combined?",
+    "answers": [
+      "China",
+      "Finland",
+      "Canada",
+      "Russia"
+    ],
+    "correct": "3"
+  },{
+    "question": "The approximate growth of a male giraffe is?",
+    "answers": [
+      "9 meters",
+      "5,5 meters",
+      "3,5 meter",
+      "7 meters"
+    ],
+    "correct": "2"
+  },{
+    "question": "In which country were computer games first recognized as a sport?",
+    "answers": [
+      "USA",
+      "Korea",
+      "Russia",
+      "China"
+    ],
+    "correct": "2"
   }
 ]
